@@ -14,6 +14,12 @@ namespace UrlShortener
 
         public static void Main(string[] args)
         {
+            if (string.IsNullOrEmpty(API_KEY))
+            {
+                PrintHelp();
+                Environment.Exit(1);
+            }
+            //
             var longUrl = ReadLine.Read("Long URL: ");
             var shortUrl = Shorten(longUrl);
             if (shortUrl == null) {
@@ -31,6 +37,16 @@ namespace UrlShortener
                 expandedUrl,
                 expandedUrl == longUrl ? Bold("matches") : $"does {Bold("NOT")} match"
             );
+        }
+
+        private static void PrintHelp()
+        {
+            string[] text = {
+                "Error: your bit.ly access token was not found",
+                "Tip: put it in the environment variable called BITLY_ACCESS_TOKEN",
+                "Tip: on the home page of bit.ly you can generate one for free"
+            };
+            Console.WriteLine(string.Join("\n", text));
         }
 
         private static string Bold(string text)
