@@ -48,3 +48,5 @@ export BITLY_ACCESS_TOKEN="..."
 * I have a [Nim implementation](https://github.com/jabbalaci/UrlShortener-nim) but that one uses an older API of bit.ly (v3).
 
 * I have a [Rust implementation](https://github.com/jabbalaci/UrlShortener-rs) too, which uses the newer API of bit.ly (v4).
+
+I recommend the Rust version.
