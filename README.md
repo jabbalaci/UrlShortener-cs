@@ -45,6 +45,6 @@ export BITLY_ACCESS_TOKEN="..."
 
 * I used [pyshorteners](https://github.com/ellisonleao/pyshorteners/blob/master/pyshorteners/shorteners/bitly.py) to figure out how to call bit.ly's API v4.
 
-* I have a [Nim implementation](https://github.com/jabbalaci/UrlShortener) but that one uses an older API of bit.ly (v3).
+* I have a [Nim implementation](https://github.com/jabbalaci/UrlShortener-nim) but that one uses an older API of bit.ly (v3).
 
 * I have a [Rust implementation](https://github.com/jabbalaci/UrlShortener-rs) too, which uses the newer API of bit.ly (v4).
