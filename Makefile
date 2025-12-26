@@ -1,4 +1,4 @@
-dummy:
+cat:
 	cat Makefile
 
 linux:
